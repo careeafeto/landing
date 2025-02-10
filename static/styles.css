@@ -1,3 +1,4 @@
+/* Definição de Cores e Fontes */
 :root {
     --cor-principal: #72c4b5;
     --cor-escura: #0d9cbf;
@@ -19,6 +20,7 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Cabeçalho */
 header {
     background-color: rgb(236, 249, 252);
     text-align: center;
@@ -126,7 +128,7 @@ nav ul li a:hover {
 }
 
 #sobre {
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 .sobre-content {
@@ -189,6 +191,28 @@ nav ul li a:hover {
     color: var(--cor-texto-subtitulo);
 }
 
+/* Seção Contato + Trabalhe Conosco */
+#contato-trabalho {
+    background-color: #eaf7f4;
+}
+
+.contact-work-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.contact-box,
+.work-box {
+    background-color: #f5fdf9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+}
 
 
 #contato,
@@ -200,6 +224,7 @@ nav ul li a:hover {
 .email-button {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     background-color: #25D366;
     color: var(--cor-clara);
     padding: 12px 20px;
@@ -207,6 +232,11 @@ nav ul li a:hover {
     text-decoration: none;
     font-size: 1rem;
     gap: 10px;
+    transition: 0.3s ease;
+}
+
+.email-button {
+    background-color: #075E54;
 }
 
 .whatsapp-button i,
@@ -324,6 +354,11 @@ footer {
         font-size: 1.1rem;
         padding: 8px 12px;
     }
+
+    .contact-work-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -385,6 +420,16 @@ footer {
     nav ul li a {
         font-size: 1rem;
         padding: 8px 10px;
+    }
+
+    .whatsapp-button,
+    .email-button {
+        font-size: 0.9rem;
+    }
+
+    .contact-box,
+    .work-box {
+        padding: 20px;
     }
 }
 
@@ -449,4 +494,16 @@ footer {
         font-size: 0.9rem;
         padding: 6px 5px;
     }
+
+    .whatsapp-button,
+    .email-button {
+        font-size: 0.85rem;
+        padding: 10px 15px;
+    }
+
+    .contact-box,
+    .work-box {
+        padding: 15px;
+    }
+
 }
