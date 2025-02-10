@@ -217,7 +217,7 @@ footer {
 /* Botão de Contato Flutuante */
 .contato-flutuante {
     position: fixed;
-    bottom: 20px;
+    bottom: 85px;
     right: 20px;
     background-color: #25D366;
     color: #fff;
@@ -239,7 +239,36 @@ footer {
     transform: scale(1.1);
 }
 
-.contato-flutuante-direita {
+.trabalhe-conosco-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #075E54;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: transform 0.3s ease;
+    gap: 3px;
+}
+
+.trabalhe-conosco-flutuante:hover {
+    transform: scale(1.1);
+}
+
+.flutuante-position-1 {
+    left: unset;
+    right: 50px;
+}
+
+.flutuante-position-2 {
     left: unset;
     right: 20px;
 }
