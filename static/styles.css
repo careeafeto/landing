@@ -253,6 +253,32 @@ footer {
     bottom: 20px;
 }
 
+.cuidador-lista {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    text-align: left;
+    max-width: 800px;
+}
+
+.cuidador-lista li {
+    font-size: 1.1rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #f5fdf9;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cuidador-lista i {
+    color: var(--cor-principal);
+    font-size: 1.5rem;
+}
+
+
 
 /* Responsividade */
 @media (max-width: 1024px) {
