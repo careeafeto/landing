@@ -19,7 +19,8 @@ body {
 header {
     background-color: rgb(236, 249, 252);
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px 20px 20px;
+    overflow-x: hidden;
 }
 
 /* Estilizando a logo */
@@ -29,7 +30,7 @@ header {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -38,22 +39,24 @@ header {
     align-items: center;
     gap: 2px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .logo-title {
     font-size: 3rem;
     font-family: var(--font-title);
     color: var(--cor-texto-titulo);
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .logo-subtitle {
     font-size: 1.5rem;
     font-family: var(--font-subtitle);
     color: var(--cor-texto-subtitulo);
-    white-space: nowrap;
+    white-space: normal;
     display: block;
-    margin-top: 10px;
+    position: relative;
+    top: -20px;
 }
 
 .logo-img {
@@ -61,6 +64,7 @@ header {
     border-radius: 35%;
     position: relative;
     top: -15px;
+    max-width: 100%;
 }
 
 .logo-img-small {
@@ -70,28 +74,44 @@ header {
     top: -10px;
 }
 
-/* Estilos de navegação */
+/* Estilizando a navegação */
 nav {
-    margin-top: 20px;
+    margin-bottom: 10px;
     background-color: rgb(236, 249, 252);
     padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid var(--cor-principal);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 nav ul li {
-    display: inline;
-    margin: 10px;
+    display: inline-block;
 }
 
 nav ul li a {
     color: var(--cor-escura);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
 }
 
 /* Seções */
@@ -100,6 +120,9 @@ nav ul li a {
     text-align: center;
 }
 
+#sobre {
+    padding: 40px 20px;
+}
 
 .sobre-content {
     display: flex;
@@ -110,7 +133,7 @@ nav ul li a {
 }
 
 .sobre-img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border-radius: 8px;
 }
@@ -153,6 +176,22 @@ nav ul li a {
     border-radius: 8px;
 }
 
+/* Seção Trabalhe Conosco */
+#trabalhe-conosco {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#trabalhe-conosco h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#trabalhe-conosco p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
 /* Botão WhatsApp */
 .whatsapp-button {
     display: inline-block;
@@ -184,7 +223,7 @@ footer {
     color: #fff;
     padding: 15px 25px;
     border-radius: 50px;
-    font-size: 1srem;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -205,7 +244,7 @@ footer {
     right: 20px;
 }
 
-/* 📱 Responsividade */
+/* Responsividade */
 @media (max-width: 1024px) {
     .logo {
         max-width: 80%;
@@ -234,11 +273,20 @@ footer {
     }
 
     .sobre-img {
-        width: 135px;
+        width: 200px;
     }
 
     .sobre-texto {
         max-width: 80%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+        padding: 8px 12px;
     }
 }
 
@@ -255,6 +303,7 @@ footer {
 
     .logo-subtitle {
         font-size: 1.2rem;
+        top: -15px;
     }
 
     .logo-img {
@@ -281,7 +330,7 @@ footer {
     }
 
     .sobre-img {
-        width: 120px;
+        width: 170px;
     }
 
     .sobre-texto h2 {
@@ -290,6 +339,16 @@ footer {
 
     .sobre-texto p {
         font-size: 1rem;
+    }
+
+    nav ul {
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 8px 10px;
     }
 }
 
@@ -304,6 +363,7 @@ footer {
 
     .logo-subtitle {
         font-size: 1.1rem;
+        top: -10px;
     }
 
     .logo-img {
@@ -334,7 +394,7 @@ footer {
     }
 
     .sobre-img {
-        width: 100px;
+        width: 150px;
     }
 
     .sobre-texto h2 {
@@ -343,5 +403,14 @@ footer {
 
     .sobre-texto p {
         font-size: 0.9rem;
+    }
+
+    nav ul {
+        gap: 7px;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 6px 5px;
     }
 }
