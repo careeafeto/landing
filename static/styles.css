@@ -100,6 +100,36 @@ nav ul li a {
     text-align: center;
 }
 
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.sobre-img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sobre-texto {
+    max-width: 70%;
+}
+
+.sobre-texto h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sobre-texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
 /* Serviços */
 .services {
     display: flex;
@@ -170,7 +200,6 @@ footer {
     transform: scale(1.1);
 }
 
-/* Alterar para ficar na direita ou esquerda ao clicar em um botão */
 .contato-flutuante-direita {
     left: unset;
     right: 20px;
@@ -196,6 +225,20 @@ footer {
 
     .logo-img-small {
         height: 50px;
+    }
+
+    .sobre-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .sobre-img {
+        width: 135px;
+    }
+
+    .sobre-texto {
+        max-width: 80%;
     }
 }
 
@@ -230,6 +273,24 @@ footer {
     .service {
         width: 90%;
     }
+
+    .sobre-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .sobre-img {
+        width: 120px;
+    }
+
+    .sobre-texto h2 {
+        font-size: 1.7rem;
+    }
+
+    .sobre-texto p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -263,6 +324,24 @@ footer {
     }
 
     .whatsapp-button {
+        font-size: 0.9rem;
+    }
+
+    .sobre-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .sobre-img {
+        width: 100px;
+    }
+
+    .sobre-texto h2 {
+        font-size: 1.5rem;
+    }
+
+    .sobre-texto p {
         font-size: 0.9rem;
     }
 }
