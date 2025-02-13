@@ -233,6 +233,7 @@ nav ul li a:hover {
     font-size: 1rem;
     gap: 10px;
     transition: 0.3s ease;
+    border: 0px;
 }
 
 .email-button {
@@ -257,7 +258,7 @@ footer {
     right: 20px;
     background-color: #25D366;
     color: #fff;
-    padding: 8px 0px;
+    padding: 9px 1px;
     border-radius: 50px;
     font-size: 1rem;
     font-weight: bold;
@@ -270,6 +271,7 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     gap: 8px;
     min-width: 180px;
+    border: 0px;
 }
 
 .contato-flutuante:hover,
