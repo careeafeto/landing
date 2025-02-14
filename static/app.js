@@ -12,6 +12,3 @@ function enviarMensagemWhatsApp(tipo) {
     let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, "_blank");
 }
-
-
-
