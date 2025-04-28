@@ -23,6 +23,20 @@
     
       gtag('config', 'AW-16871574310');
     </script>
+
+
+    <script>
+        function gtag_report_conversion(label) {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-16871574310/oS8-CKOMzp0aEKaW_-w-',
+            'value': 1.0,
+            'currency': 'BRL',
+            'event_category': 'button_click',
+            'event_label': label
+          });
+        }
+    </script>
+
 </head>
 
 <body>
@@ -164,13 +178,13 @@
         <p>&copy; 2025 Care e Afeto. Todos os direitos reservados.</p>
     </footer>
 
-    <button class="contato-flutuante" onclick="enviarMensagemWhatsApp('solicitar')">
+    <button class="contato-flutuante" onclick="gtag_report_conversion('solicitar'); enviarMensagemWhatsApp('solicitar')">
         <i class="fab fa-whatsapp"></i>
         <span>Solicitar Cuidador</span>
     </button>
 
     <button class="trabalhe-conosco-flutuante" style="background-color: #128C7E;"
-        onclick="enviarMensagemWhatsApp('trabalhar')">
+        onclick="gtag_report_conversion('trabalhar'); enviarMensagemWhatsApp('trabalhar')">
         <i class="fab fa-whatsapp"></i>
         <span>Seja um Cuidador</span>
     </button>
